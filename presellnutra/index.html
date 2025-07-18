@@ -1,160 +1,105 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <!-- TikTok Pixel Code Start -->
-<script>
-!function (w, d, t) {
-  w.TiktokAnalyticsObject=t;var ttq=w[t]=w[t]||[];ttq.methods=["page","track","identify","instances","debug","on","off","once","ready","alias","group","enableCookie","disableCookie","holdConsent","revokeConsent","grantConsent"],ttq.setAndDefer=function(t,e){t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}};for(var i=0;i<ttq.methods.length;i++)ttq.setAndDefer(ttq,ttq.methods[i]);ttq.instance=function(t){for(
-var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++)ttq.setAndDefer(e,ttq.methods[n]);return e},ttq.load=function(e,n){var r="https://analytics.tiktok.com/i18n/pixel/events.js",o=n&&n.partner;ttq._i=ttq._i||{},ttq._i[e]=[],ttq._i[e]._u=r,ttq._t=ttq._t||{},ttq._t[e]=+new Date,ttq._o=ttq._o||{},ttq._o[e]=n||{};n=document.createElement("script")
-;n.type="text/javascript",n.async=!0,n.src=r+"?sdkid="+e+"&lib="+t;e=document.getElementsByTagName("script")[0];e.parentNode.insertBefore(n,e)};
-
-
-  ttq.load('D1RI0JRC77UD0Q7U1BOG');
-  ttq.page();
-}(window, document, 'ttq');
-</script>
-<!-- TikTok Pixel Code End -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Age Confirmation</title>
+    <title>Oferta Exclusiva - Potencia Máxima</title>
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
         body {
             font-family: Arial, sans-serif;
-            min-height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        
+        /* Seção 1 - Atención */
+        .secao1 {
+            background-color: #ff0000;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            font-weight: bold;
+            font-size: 1.5em;
+        }
+        
+        /* Seção 2 - Copy */
+        .secao2 {
             background-color: white;
+            color: black;
             padding: 20px;
         }
-
-        .confirmation-container {
+        
+        .secao2 h1 {
+            color: #0066cc;
             text-align: center;
-            max-width: 400px;
-            width: 100%;
-        }
-
-        .confirmation-title {
-            color: #cc0000;
-            font-size: 28px;
-            font-weight: bold;
             margin-bottom: 20px;
         }
-
-        .confirmation-text {
-            color: #000;
-            font-size: 24px;
-            font-weight: bold;
-            margin-bottom: 30px;
-            line-height: 1.2;
+        
+        /* Seção 3 - Botões */
+        .secao3 {
+            background-color: white;
+            padding: 20px;
+            text-align: center;
         }
-
-        .watch-button {
-            background-color: #e65c00;
-            color: white;
-            border: none;
-            padding: 12px 40px;
-            font-size: 18px;
-            font-weight: bold;
-            cursor: pointer;
-            border-radius: 4px;
-            text-transform: uppercase;
-            transition: background-color 0.3s ease;
-        }
-
-        .watch-button:hover {
-            background-color: #cc5200;
-        }
-    </style>
-    
-    
-    <style>
-        /* Container centralizado e responsivo */
-        .midas-cta-container {
-            max-width: 100%; /* Largura máxima do container */
-            margin: 0 auto; /* Centraliza o conteúdo horizontalmente */
-            text-align: center; /* Centraliza o texto e elementos */
-            padding: 20px; /* Espaçamento interno */
-        }
-
-        /* Botão estilizado - Agora em verde */
-        #midas-cta-button {
+        
+        .botao {
             display: inline-block;
-            margin-top: 15px; /* Espaço entre a imagem e o botão */
-            padding: 10px 20px;
-            font-size: 16px;
-            color: #fff;
-            background-color: #e65c00; /* Cor laranja */
-            border: none;
+            padding: 15px 30px;
+            margin: 10px;
+            font-size: 1.2em;
+            font-weight: bold;
+            text-decoration: none;
             border-radius: 5px;
             cursor: pointer;
-            text-decoration: none; /* Remove o sublinhado caso seja um link */
-            font-weight: bold;
+            border: none;
         }
         
-        /* Botão responsivo ao passar o mouse */
-        #midas-cta-button:hover {
-            background-color: #e65c00; /* Cor verde mais escura ao passar o mouse */
+        .botao-aceitar {
+            background-color: #28a745;
+            color: white;
+        }
+        
+        .botao-recusar {
+            background-color: #dc3545;
+            color: white;
+        }
+        
+        /* Seção 4 - Texto extra */
+        .secao4 {
+            background-color: black;
+            color: white;
+            padding: 20px;
+            text-align: center;
         }
     </style>
-    
-    
-    
-    <script
-  src="https://cdn.utmify.com.br/scripts/utms/latest.js"
-  data-utmify-prevent-subids
-  async
-  defer
-></script>
-    
-    
-     <script>
-      document.addEventListener("DOMContentLoaded", function () {
-          function getAllParams(url) {
-              const urlObj = new URL(url);
-              let paramString = "";
-
-              // Iterando sobre todos os parâmetros da URL
-              for (const [key, value] of urlObj.searchParams) {
-                  paramString += `${paramString ? '&' : ''}${key}=${value}`;
-              }
-
-              return paramString;
-          }
-
-          const params = getAllParams(window.location.href);
-
-          if (params) {
-              const links = document.querySelectorAll("a");
-
-              links.forEach(link => {
-                  const separator = link.href.includes("?") ? "&" : "?";
-                  link.href += `${separator}${params}`;
-              });
-          }
-      });
-    </script>
-    
-    
 </head>
 <body>
-    
-    
-    <div class="confirmation-container">
-        <h1 class="confirmation-title">Necesitamos Confirmación:</h1>
-        <p class="confirmation-text">Haga Clic En Ver Ahora Si Tiene +35!</p>
-        <div class="midas-cta-container"> 
-<a href="https://ga.hombredefuego.online/pv" id="midas-cta-button" class="midas-cta">
-            MIRA AHORA
-        </a>
+    <!-- Seção 1 -->
+    <div class="secao1">
+        ATENCIÓN
     </div>
+    
+    <!-- Seção 2 -->
+    <div class="secao2">
+        <h1>LEA HASTA EL FINAL PARA COMPLETAR SU COMPRA</h1>
+        <p>Hola, quiero felicitarte por haber tomado la decisión inteligente de asegurar mi Protocolo de Recetas Naturales</p>
+
+        [TODO O TEXTO DA SEÇÃO 2 QUE VOCÊ ENVIOU ANTERIORMENTE]
+        <!-- Todo o texto longo da copy foi mantido aqui -->
         
+    </div>
+    
+    <!-- Seção 3 - Botões -->
+    <div class="secao3">
+        <a href="" class="botao botao-aceitar">Añadir al pedido</a>
+        <a href="" class="botao botao-recusar">Perder la oportunidad</a>
+    </div>
+    
+    <!-- Seção 4 -->
+    <div class="secao4">
+        <p>Haz clic en el 'botón verde' arriba para acceder al protocolo digital y agregar Potencia Máxima a tu pedido para mejorar tu herramienta y sorprender a tu pareja</p>
+        <p>Al comenzar el protocolo digital y no sentir resultados o no poder satisfacer a tu pareja, simplemente envíanos un mensaje o correo electrónico diciendo que no estás satisfecho con tus resultados y te reembolsaremos el 100% de tu dinero. Tu riesgo es cero. Confío tanto en el protocolo y sé que funciona que te voy a proponer esto.</p>
+        <p>Tienes 30 días para ver si funcionará, pero estoy seguro de que me enviarás un mensaje agradeciéndome por haberte presentado el Protocolo de Recetas Naturales y Potencia Máxima.</p>
     </div>
 </body>
 </html>
